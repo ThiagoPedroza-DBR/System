@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const pedidosRoutes = require('./routes/pedidos.roubtes');
+const pedidosRoutes = require('./routes/pedidos.routes');
 
 app.use('/pedidos', pedidosRoutes);
 
