@@ -1,9 +1,11 @@
-const { Pool } = require("undici-types")
+const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "cortinas_db",
-    password: "123456",
-    port: 5432,
-})
+  user: 'postgres',
+  host: 'localhost',
+  database: 'cortinas_db',
+  password: '123456',
+  port: 5432,
+});
+
+module.exports = pool;
